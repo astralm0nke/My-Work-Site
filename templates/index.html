@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<!--
+	Astral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Finneas Sensiba</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper-->
+			<div id="wrapper">
+			<!-- Nav -->
+				<nav id="nav">
+					<a href="#home" class="icon solid fa-home"><span>Home</span></a>
+					<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
+					<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+					<a href="https://twitter.com/Sensibaf" class="icon brands fa-twitter"><span>Twitter/X</span></a>
+				</nav>
+			<!-- Main -->
+				<div id="main">
+					<!-- Me -->
+					<article id="home" class="panel intro">
+						<header>
+							<h1>Finneas Sensiba</h1>
+							<h3>Writer/Photographer/Programmer</h3>
+						</header>
+						<a href="#work" class="jumplink pic">
+							<span class="arrow icon solid fa-chevron-right"><span>Check out some of my work here</span></span>
+							<img src="static/images/Me_DC.jpeg" alt="Photo of me near the National Mall in 2023." />
+						</a>
+					</article>
+
+					<!-- Work -->
+					<article id="work" class="panel">
+						<header>
+							<h2>Work</h2>
+						</header>
+						<p>
+							I have a B.A. in Russian Studies from Rhodes College. I am a translator and journalist, as well as python programmer. Click the icons to see more of my work on Medium, GitHub, and Borgen Magazine.
+						</p>
+						<section>
+							<div class="row">
+								<div class="col-4 col-6-medium col-12-small">
+									<a href="https://github.com/astralm0nke" class="image fit"><img src="static/images/github_logo.png" alt="Link to my GitHub"></a>
+								</div>
+								<div class="col-4 col-6-medium col-12-small">
+									<a href="https://medium.com/@sensibaf81632" class="image fit"><img src="static/images/medium_logo.png" alt="Link to my Medium"></a>
+								</div>
+								<div class="col-4 col-6-medium col-12-small">
+									<a href="https://www.borgenmagazine.com/midwives-for-haiti-improving-maternal-care-in-haiti/#:~:text=Midwives%20for%20Haiti%20is%20an,health%20care%20providers%20and%20communities." class="image fit"><img src="static/images/midwives4Hpic.jpeg" alt="Midwives for Haiti article in Borgen Magazine"></a>
+								</div>
+								<div class="col-4 col-6-medium col-12-small">
+									<a href="https://borgenproject.org/humanitarian-response-in-sudan/" class="image fit"><img src="static/images/Sudanpic.jpeg" alt="Borgen Blog post about USAID's efforts in Sudan."></a>
+								</div>
+								<div class="col-4 col-6-medium col-12-small">
+									<a href="https://twitter.com/sensibaf" class="image fit"><img src="static/images/x_logo.png" alt="Link to my Twitter/X page."></a>
+								</div>
+								<div class="col-4 col-6-medium col-12-small">
+									<a href="https://www.linkedin.com/in/finneas-sensiba-64b049154/" class="image fit"><img src="static/images/linkedin_logo.png" alt="Link to my LinkedIn."></a>
+								</div>
+							</div>
+						</section>
+					</article>
+
+						<!-- Contact -->
+					<article id="contact" class="panel">
+						<header>
+							<h2>Contact Me</h2>
+						</header>
+						<form action="{{ url_for('contact') }}" method="post">
+							<div>
+								<div class="row">
+									<div class="col-6 col-12-medium">
+										<p>
+										{{ form.name.label(class_="form-control") }} <br>
+										{{ form.name(placeholder='Your Name') }}
+										</p>
+									</div>
+									<div class="col-6 col-12-medium">
+										<p>
+										{{ form.email.label(class_="form-control") }} <br>
+										{{ form.email(placeholder='Your Email') }}
+										</p>
+									</div>										
+									<div class="col-6 col-12-medium">
+										<p>
+										{{ form.subject.label(class_="form-control") }}<br>
+										{{form.subject(placeholder='Message Subject')}}
+										</p>
+									</div>
+									<div class="col-6 col-12-medium">
+										<p>
+										{{ form.message.label(class_="form-control") }}<br>
+										{{ form.message(placeholder='Write your message ...') }}
+										</p>										
+									</div>
+									<div class="col-6 col-12-medium">
+										<p>{{ form.submit(class_="form-control") }}</p>
+									</div>
+								</div>
+							</div>
+						</form>
+					</article>
+				</div>
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; </li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>Photo by <a href="https://unsplash.com/@juvnsky?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Anton Maksimov 5642.su</a> on <a href="https://unsplash.com/photos/AJ152dPY134?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+							</li>
+						</ul>
+					</div>
+			</div>
+		<!-- Scripts -->
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/browser.min.js"></script>
+			<script src="static/assets/js/breakpoints.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
+
+	</body>
+</html>
