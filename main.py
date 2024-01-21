@@ -23,7 +23,6 @@ def contact():
         email = request.form('email')
         subject = request.form('subject')
         message = request.form('message')
-        return render_template("index.html", form=form)
     return render_template("index.html", form=form)
     
 if __name__ == "__main__":
