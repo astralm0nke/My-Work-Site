@@ -5,7 +5,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 Credits:
 
 	Background Image:
-		Unsplash (unsplash.com)
+		Anton Maksimov on Unsplash (https://unsplash.com/photos/AJ152dPY134)
 
 	Icons:
 		Font Awesome (fontawesome.io)
